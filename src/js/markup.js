@@ -4,7 +4,7 @@ export const markupImages = (array) => {
         return `
     <div class="photo-card">
         <a href='${largeImageURL}'>
-            <img class="photo-card__img" src="${webformatURL}" alt="${tags}" loading="lazy" width = '350' height = '250' />
+            <img class="photo-card__img" src="${webformatURL}" alt="${tags}" loading="lazy" width = '400' height = '300' />
         </a>
         <div class="info">
             <p class="info-item">
