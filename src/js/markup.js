@@ -1,23 +1,23 @@
 export const markupImages = (array) => {
     return array.map(item => {
-        const { webformatURL, largeImageURL, tags, likes, views, comments, download } = item;
+        const { webformatURL, largeImageURL, tags, likes, views, comments, downloads } = item;
         return `
     <div class="photo-card">
         <a href='${largeImageURL}'>
-            <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+            <img src="${webformatURL}" alt="${tags}" loading="lazy" width = '350' />
         </a>
         <div class="info">
             <p class="info-item">
-                <b>${likes}</b>
+                <b>Likes: ${likes}</b>
             </p>
             <p class="info-item">
-                <b>${views}</b>
+                <b>Views: ${views}</b>
             </p>
             <p class="info-item">
-                <b>${comments}</b>
+                <b>Comments: ${comments}</b>
             </p>
             <p class="info-item">
-                <b>${download}</b>
+                <b>Downloads: ${downloads}</b>
             </p>
         </div>
     </div>`
